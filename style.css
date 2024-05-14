@@ -1,0 +1,39 @@
+body {
+    background: rgb(148, 184, 252);
+}
+
+.attribution {
+     font-size: 11px; text-align: center;
+ }
+
+.attribution a { 
+    color: black;
+ }
+
+ .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    margin: auto;
+    width: 15%;
+    padding: 20px;
+    margin-top: 200px;
+    border-radius: 14px;
+    
+    
+ }
+
+ .container img{
+    width: 300px;
+    border-radius: 7px;
+ }
+
+ .container p {
+   text-align: center;
+ }
+
+ .container h3 {
+   text-align: center;
+ }
