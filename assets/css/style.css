@@ -1,5 +1,5 @@
 body {
-   background: rgb(148, 184, 252);
+   background-color: hsl(212, 45%, 89%);
    height: 100dvh; /* the body need to know the full height if the screen to place the content on the center dynamically */
    display: flex;
    flex-direction: column;
@@ -51,6 +51,40 @@ body {
    text-align: center;
  }
  
+
+ /* Mobile view */
+@media only screen and (max-width: 375px) {
+   .container {
+       max-width: 100%;
+   }
+   
+   .QR-container {
+       width: 90%;
+       display: flex;
+       justify-content: center;
+   }
+
+   .QR-image {
+       width: 80%; 
+       height: 80%; 
+   }
+
+   .QR_content {
+       width: 90%;
+   }
+
+   .QR_content h2 {
+       font-size: 16px; 
+   }
+
+   .QR_para p {
+       font-size: 10px; 
+   }
+}
+
+
+
+
  /* here are a few tips,
  - On your browser download the extension "debug css", helps you edit your pages css visually
  - also download PixelPerfect, to obtain perfect measurments base on the image provided...
