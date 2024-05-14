@@ -1,39 +1,59 @@
 body {
-    background: rgb(148, 184, 252);
-}
-
-.attribution {
-     font-size: 11px; text-align: center;
+   background: rgb(148, 184, 252);
+   height: 100dvh; /* the body need to know the full height if the screen to place the content on the center dynamically */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
  }
-
-.attribution a { 
-    color: black;
+ 
+ .attribution {
+   /* since EVERYTHING in our bosy is centered, lets make our attribution a free man, absolute positioning should do the trick */
+   position: absolute;
+   bottom: 0;
+   font-size: 11px;
+   text-align: center;
  }
-
+ 
+ .attribution a {
+   color: black;
+   text-decoration: none;
+   font-weight: bold;
+ }
+ 
  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: white;
-    margin: auto;
-    width: 15%;
-    padding: 20px;
-    margin-top: 200px;
-    border-radius: 14px;
-    
-    
+   display: flex;
+   flex-direction: column; /* it's better to place it here, right after defining the flex property*/
+   align-items: center;
+   justify-content: center;
+   /* flex-direction: column; */
+   background: white;
+   /* margin: auto; */
+   margin-inline: auto; /* This is the margin on the 'y' axis */
+   /* give the body a flex property, and place the content center - refer to the "body" for more info*/
+   /* width: 15%; */ /* This was your error */
+   width: min-content; /* this is better as we want the container to fit the image just right, */
+   padding: 20px;
+   /* margin-top: 200px; */ /* This wont be required */
+   border-radius: 14px;
  }
-
- .container img{
-    width: 300px;
-    border-radius: 7px;
+ 
+ .container img {
+   width: 300px;
+   border-radius: 7px;
  }
-
+ 
  .container p {
    text-align: center;
  }
-
+ 
  .container h3 {
    text-align: center;
  }
+ 
+ /* here are a few tips,
+ - On your browser download the extension "debug css", helps you edit your pages css visually
+ - also download PixelPerfect, to obtain perfect measurments base on the image provided...
+ - Hope this helps ;)
+ */
+ 
